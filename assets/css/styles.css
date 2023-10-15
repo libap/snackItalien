@@ -2204,3 +2204,9 @@ footer h1{
     margin-bottom: 10px;
   }
 }
+
+#alacarte{
+  font-size: 3rem;
+  padding: 0px 10px 50px 10px;
+  font-family: var(--fontFamily-forum);
+}
