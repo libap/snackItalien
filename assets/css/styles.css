@@ -2212,7 +2212,7 @@ footer h1{
 }@media screen and (max-width: 700px) {
 
   #alacarte{
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 0px 10px 50px 10px;
   font-family: var(--fontFamily-forum);
 }
