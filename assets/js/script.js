@@ -76,15 +76,19 @@ const hideHeader = function () {
 
     lastScrollPos = window.scrollY;
 }
+var chevronIcon = backTopBtn.querySelector(".chevron-up");
 
 window.addEventListener("scroll", function () {
     if (window.scrollY >= 50) {
         header.classList.add("active");
         backTopBtn.classList.add("active");
+        chevronIcon.setAttribute("aria-hidden", "false");
         hideHeader();
     } else {
         header.classList.remove("active");
         backTopBtn.classList.remove("active");
+        chevronIcon.setAttribute("aria-hidden", "true");
+
     }
 });
 
