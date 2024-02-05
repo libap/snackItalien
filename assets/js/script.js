@@ -76,21 +76,41 @@ const hideHeader = function () {
 
     lastScrollPos = window.scrollY;
 }
-var chevronIcon = backTopBtn.querySelector(".chevron-up");
+
+const chevronIcon = document.querySelector(".parent-chevron-up");
 
 window.addEventListener("scroll", function () {
     if (window.scrollY >= 50) {
+        console.log(window.scrollY)
         header.classList.add("active");
-        backTopBtn.classList.add("active");
-        chevronIcon.setAttribute("aria-hidden", "false");
         hideHeader();
+        if (window.scrollY >= 1300) {
+            chevronIcon.style.display = "flex";
+
+        }
     } else {
         header.classList.remove("active");
-        backTopBtn.classList.remove("active");
-        chevronIcon.setAttribute("aria-hidden", "true");
+        chevronIcon.style.display = "none";
 
     }
 });
+
+/*
+const chevronIcon = document.querySelector(".parent-chevron-up");
+if (window.scrollY >= 200) {
+    console.log(window.scrollY);
+    //backTopBtn.style.display = "none";
+
+} else {
+    //backTopBtn.style.display = "flex";
+    console.log(window.scrollY);
+}
+
+*/
+
+
+
+
 
 
 
@@ -182,3 +202,9 @@ window.addEventListener("mousemove", function (event) {
     }
 
 });
+
+
+const joursSemaine = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+const jourActuel = new Date().getDay();
+
+console.log(`Aujourd'hui, c'est ${joursSemaine[jourActuel]}`);

@@ -1423,6 +1423,28 @@ footer .footer-list a{
   #BACK TO TOP
 \*-----------------------------------*/
 
+.parent-chevron-up {
+  position: fixed;
+  bottom: 20px; /* Ajustez cette valeur selon vos besoins */
+  right: 20px; /* Ajustez cette valeur selon vos besoins */
+  background-color: white;
+  border-radius: 50%;
+  width: 50px; /* Ajustez cette valeur selon vos besoins */
+  height: 50px; /* Ajustez cette valeur selon vos besoins */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.chevron {
+  color: black; /* Couleur de la flèche */
+  font-size: 24px; /* Ajustez cette valeur selon vos besoins */
+  z-index: 9998;
+}
+
+
 .back-top-btn {
   position: fixed;
   bottom: 20px;
@@ -2217,3 +2239,6 @@ footer h1{
   font-family: var(--fontFamily-forum);
 }
   }
+
+  
+
