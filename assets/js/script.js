@@ -81,7 +81,7 @@ const chevronIcon = document.querySelector(".parent-chevron-up");
 
 window.addEventListener("scroll", function () {
     if (window.scrollY >= 50) {
-        console.log(window.scrollY)
+        //console.log(window.scrollY)
         header.classList.add("active");
         hideHeader();
         if (window.scrollY >= 1300) {
@@ -94,20 +94,6 @@ window.addEventListener("scroll", function () {
 
     }
 });
-
-/*
-const chevronIcon = document.querySelector(".parent-chevron-up");
-if (window.scrollY >= 200) {
-    console.log(window.scrollY);
-    //backTopBtn.style.display = "none";
-
-} else {
-    //backTopBtn.style.display = "flex";
-    console.log(window.scrollY);
-}
-
-*/
-
 
 
 
@@ -207,4 +193,24 @@ window.addEventListener("mousemove", function (event) {
 const joursSemaine = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
 const jourActuel = new Date().getDay();
 
+
+
 console.log(`Aujourd'hui, c'est ${joursSemaine[jourActuel]}`);
+const entreesPlats = document.querySelector('#entreesPlats');
+const desserts = document.querySelector('#desserts');
+const ImageentreesPlats = document.querySelector('#imagePlats');
+const Imagedesserts = document.querySelector('#imageDesserts');
+
+
+
+if (jourActuel !== 0 && jourActuel !== 6) {
+    entreesPlats.href = `#entreesPlats${joursSemaine[jourActuel]}`;
+    desserts.href = `#desserts${joursSemaine[jourActuel]}`;
+    ImageentreesPlats.href = `#entreesPlats${joursSemaine[jourActuel]}`;
+    Imagedesserts.href = `#desserts${joursSemaine[jourActuel]}`;
+} else {
+    entreesPlats.href = `#entreesPlatsLundi`;
+    desserts.href = `#dessertsLundi`;
+    ImageentreesPlats.href = `#entreesPlatsLundi`;
+    Imagedesserts.href = `#dessertsLundi`;
+}
