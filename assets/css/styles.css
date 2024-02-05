@@ -37,6 +37,7 @@
   --black: hsla(0, 0%, 0%, 1);
   --black-alpha-80: hsla(0, 0%, 0%, 0.8);
   --black-alpha-15: hsla(0, 0%, 0%, 0.15);
+  --black: #000000;
 
   /**
    * GRADIENT COLOR
@@ -405,6 +406,7 @@ body.nav-active { overflow: hidden; }
   padding-block: var(--section-space);
   overflow: hidden;
   z-index: 1;
+  background-color:  var(--smoky-black-1) !important;
 }
 
 .bg-black-10 { background-color: var(--smoky-black-2); }
@@ -615,7 +617,7 @@ body.nav-active { overflow: hidden; }
 
 .header.active {
   padding-block: 20px;
-  background-color: var(--eerie-black-4);
+  background-color: var(--black);
   border-color: var(--black-alpha-15);
 }
 
