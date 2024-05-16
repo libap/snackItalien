@@ -2240,7 +2240,15 @@ footer h1{
   padding: 0px 10px 50px 10px;
   font-family: var(--fontFamily-forum);
 }
+
+  
+  .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
   }
 
   
-
